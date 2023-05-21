@@ -1,0 +1,16 @@
+<div class="mb-3 text-center text-2xl" >
+	<p class="font-bold">{{ collection ? collection.title : '' }}</p>
+</div>
+<p-carousel [value]="books" [numVisible]="5" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+    <ng-template let-book pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div class="mb-3 flex items-center justify-center">
+                <img [src]="book.cover" [alt]="book.title" style="width: 230px;height: 320px" />
+            </div>
+            <div>
+                <a class="no-underline hover:underline hover:text-blue-600 cursor-pointer mb-1 text-lg" [routerLink]="['books', book.id]">{{ book.title }}</a>
+                <h6 class="mt-0 text-xs mb-3">{{ book.author }}</h6>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>

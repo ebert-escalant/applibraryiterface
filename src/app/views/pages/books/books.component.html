@@ -1,0 +1,86 @@
+<div class="py-6 px-2">
+	<div class="grid grid-cols-1 md:grid-cols-8">
+		<div class="md:col-span-2 p-4 max-h-96 overflow-y-auto md:max-h-none">
+			<ul class="">
+				<li class="text-lg">Editorial</li>
+				<li class="hover:bg-gray-200 dark:hover:bg-gray-800 rounded py-1 px-3 flex" *ngFor="let publisher of publishers">
+					<span class="cursor-pointer flex-1" (click)="selectPublisher(publisher)">
+						<fa-icon [icon]="faCircle" class="text-emerald-500" *ngIf="publisher === selectedPublisher"></fa-icon>
+						<fa-icon [icon]="farCircle" class="text-gray-500" *ngIf="publisher !== selectedPublisher"></fa-icon>
+						{{ publisher }}
+					</span>
+					<fa-icon [icon]="faTimes" class="text-red-500 cursor-pointer" *ngIf="publisher === selectedPublisher" (click)="selectPublisher('all')"></fa-icon>
+				</li>
+				<li class="text-lg mt-4">Categoría</li>
+				<li class="hover:bg-gray-200 dark:hover:bg-gray-800 rounded py-1 px-3 flex" *ngFor="let category of categories">
+					<span class="cursor-pointer flex-1" (click)="selectCategory(category)">
+						<fa-icon [icon]="faCircle" class="text-emerald-500" *ngIf="category === selectedCategory"></fa-icon>
+						<fa-icon [icon]="farCircle" class="text-gray-500" *ngIf="category !== selectedCategory"></fa-icon>
+						{{ category }}
+					</span>
+					<fa-icon [icon]="faTimes" class="text-red-500 cursor-pointer" *ngIf="category === selectedCategory" (click)="selectCategory('all')"></fa-icon>
+				</li>
+				<li class="text-lg mt-4">Lenguaje</li>
+				<li class="hover:bg-gray-200 dark:hover:bg-gray-800 rounded cursor-pointer py-1 px-3 flex" *ngFor="let language of languages">
+					<span class="cursor-pointer flex-1" (click)="selectLanguage(language)">
+						<fa-icon [icon]="faCircle" class="text-emerald-500" *ngIf="language === selectedLanguage"></fa-icon>
+						<fa-icon [icon]="farCircle" class="text-gray-500" *ngIf="language !== selectedLanguage"></fa-icon>
+						{{ language }}
+					</span>
+					<fa-icon [icon]="faTimes" class="text-red-500 cursor-pointer" *ngIf="language === selectedLanguage" (click)="selectLanguage('all')"></fa-icon>
+				</li>
+				<li class="text-lg mt-4">Colección</li>
+				<li class="hover:bg-gray-200 dark:hover:bg-gray-800 rounded cursor-pointer py-1 px-3 flex" *ngFor="let collection of collections">
+					<span class="cursor-pointer flex-1" (click)="selectCollection(collection)">
+						<fa-icon [icon]="faCircle" class="text-emerald-500" *ngIf="collection === selectedCollection"></fa-icon>
+						<fa-icon [icon]="farCircle" class="text-gray-500" *ngIf="collection !== selectedCollection"></fa-icon>
+						{{ collection }}
+					</span>
+					<fa-icon [icon]="faTimes" class="text-red-500 cursor-pointer" *ngIf="collection === selectedCollection" (click)="selectCollection('all')"></fa-icon>
+				</li>
+				<li class="text-lg mt-4">Año</li>
+				<li class="hover:bg-gray-200 dark:hover:bg-gray-800 rounded cursor-pointer py-1 px-3 flex" *ngFor="let year of years">
+					<span class="cursor-pointer flex-1" (click)="selectYear(year)">
+						<fa-icon [icon]="faCircle" class="text-emerald-500" *ngIf="year === selectedYear"></fa-icon>
+						<fa-icon [icon]="farCircle" class="text-gray-500" *ngIf="year !== selectedYear"></fa-icon>
+						{{ year }}
+					</span>
+					<fa-icon [icon]="faTimes" class="text-red-500 cursor-pointer" *ngIf="year === selectedYear" (click)="selectYear('all')"></fa-icon>
+				</li>
+			</ul>
+		</div>
+		<div class="md:col-span-6">
+			<div class="mb-4 flex items-center">
+				<div class="flex-1 relative">
+					<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+						<svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+					</div>
+					<input type="search" id="default-search" class="block w-full px-4 py-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded bg-gray-50 focus:ring-0 focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Expresión de busqueda" [(ngModel)]="searchValue" />
+				</div>
+				<div class="ml-4">
+					<button class="px-4 py-2 text-sm font-medium tracking-wide text-white capitalize bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600" (click)="filterData()">
+						Buscar
+					</button>
+				</div>
+			</div>
+			<hr>
+			<div class="mt-4 w-full" *ngIf="!loading">
+				<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<li class="bg-white text-gray-900 rounded-lg shadow overflow-hidden" *ngFor="let book of books">
+						<article>
+							<figure>
+								<img class="h-72 w-full object-cover object-center" [src]="book.cover" alt="">
+							</figure>
+							<div class="py-4 px-3">
+								<h1 class="text-lg font-semibold ">
+									<a class="no-underline hover:underline hover:text-blue-600 cursor-pointer mb-1 text-lg" [routerLink]="['books', book.id]">{{ book.title }}</a>
+								</h1>
+								<p class="text-sm">{{ book.author }}</p>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<div class="min-h-screen w-full bg-slate-100 dark:bg-gray-900">
+	<app-navbar (toggleSidebar)="toggleSidebar()"></app-navbar>
+	<div class="max-w-[90rem] mx-auto text-gray-900 dark:text-gray-100">
+		<router-outlet></router-outlet>
+	</div>
+	<p-sidebar [(visible)]="sidebarVisible" position="right" class="bg-white dark:bg-gray-800">
+		<ng-template pTemplate="header">
+			<h3 class="text-2xl font-bold mb-3">Buscar</h3>
+		</ng-template>
+		<input type="text" class="w-full border-1 rounded-lg p-2 mb-3 border border-gray-500 focus:outline-none focus:border-blue-500" placeholder="Buscar..." [(ngModel)]="searchValue" (ngModelChange)="changeSearchValue()">
+		<hr>
+		<div class="mb-3">
+			<h3 class="text-lg font-bold mb-3" *ngIf="!loading && collections.length == 0 && searchValue.trim().length > 0">
+				No se encontraron resultados
+			</h3>
+			<ul *ngIf="!loading && collections.length > 0">
+				<li *ngFor="let collection of collections">
+					<h3 class="text-2xl font-bold mb-3">{{ collection.title }}</h3>
+					<div class="flex p-2 border-b border-gray-200" *ngFor="let book of collection.books">
+						<img class="h-15 w-20 objec-cover mr-4 rounded-lg" [src]="book.cover" alt="">
+						<article class="flex-1">
+							<h1 class="font-bold">
+								<a class="no-underline hover:underline hover:text-blue-600 cursor-pointer mb-1 text-lg" [routerLink]="['/books', book.id]">{{ book.title }}</a>
+							</h1>
+							<p class="text-sm mt-2">{{ book.author }}</p>
+						</article>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</p-sidebar>
+</div>

@@ -1,0 +1,15 @@
+<p-carousel [value]="images" [numVisible]="1" [numScroll]="1" [circular]="false" [className]="'px-0'">
+    <ng-template let-image pTemplate="item">
+        <div class="surface-border text-center overflow-x-hidden">
+            <div class="mb-3 minw-w-[50rem]">
+                <img [src]="image.source" [alt]="image.alt" class="w-full h-56" />
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+<div class="mt-4" *ngIf="!loading">
+	<app-book-collection [collection]="collections[0]"></app-book-collection>
+	<app-book-collection [collection]="collections[0]"></app-book-collection>
+	<app-book-collection [collection]="collections[0]"></app-book-collection>
+</div>

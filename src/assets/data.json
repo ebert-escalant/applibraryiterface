@@ -1,0 +1,310 @@
+{
+	"title": "Biblioteca Virtual",
+	"collections": [
+		{
+			"title": "Grandes clásicos",
+			"books": [
+				{
+					"id": "1",
+					"title": "La ciudad y los perros",
+					"author": "Mario Vargas Llosa",
+					"cover": "https://www.casadelaliteratura.gob.pe/wp-content/uploads/2013/11/PortadaLaciudadyLosPerros.jpg",
+					"rating": "9.2",
+					"votes": 15,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1962,
+						"publisher": "Seix Barral",
+						"pages": 472,
+						"language": "Spanish",
+						"since": "10/06/2018",
+						"size": "4.76 MB",
+						"license": "All rights reserved",
+						"content": "La ciudad y los perros es una novela que tiene lugar en la Academia Militar Leoncio Prado, donde un grupo de estudiantes enfrenta la violencia, la corrupción y la opresión en un ambiente marcado por la rigidez militar."
+					},
+					"categories": [
+						"Fiction",
+						"Latin American Literature"
+					],
+					"tags": [
+						"Academia Militar",
+						"Violencia",
+						"Corrupción",
+						"Opresión"
+					]
+				},
+				{
+					"id": "2",
+					"title": "Don Quijote de la Mancha",
+					"author": "Miguel de Cervantes Saavedra",
+					"cover": "https://oceano.mx/img/obra/media/14946.jpg",
+					"rating": "9.5",
+					"votes": 20,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1605,
+						"publisher": "Francisco de Robles",
+						"pages": 863,
+						"language": "Spanish",
+						"since": "04/23/2016",
+						"size": "5.32 MB",
+						"license": "Dominio público",
+						"content": "Don Quijote de la Mancha es una novela que narra las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza. Es considerada una de las obras más importantes de la literatura universal."
+					},
+					"categories": [
+						"Fiction",
+						"Classic Literature"
+					],
+					"tags": [
+						"Caballeros",
+						"Aventuras",
+						"Locura",
+						"Humor"
+					]
+				},
+				{
+					"id": "3",
+					"title": "La ciudad y los perros",
+					"author": "Mario Vargas Llosa",
+					"cover": "https://www.casadelaliteratura.gob.pe/wp-content/uploads/2013/11/PortadaLaciudadyLosPerros.jpg",
+					"rating": "9.2",
+					"votes": 15,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1962,
+						"publisher": "Seix Barral",
+						"pages": 472,
+						"language": "Spanish",
+						"since": "10/06/2018",
+						"size": "4.76 MB",
+						"license": "All rights reserved",
+						"content": "La ciudad y los perros es una novela que tiene lugar en la Academia Militar Leoncio Prado, donde un grupo de estudiantes enfrenta la violencia, la corrupción y la opresión en un ambiente marcado por la rigidez militar."
+					},
+					"categories": [
+						"Fiction",
+						"Latin American Literature"
+					],
+					"tags": [
+						"Academia Militar",
+						"Violencia",
+						"Corrupción",
+						"Opresión"
+					]
+				},
+				{
+					"id": "4",
+					"title": "Don Quijote de la Mancha",
+					"author": "Miguel de Cervantes Saavedra",
+					"cover": "https://oceano.mx/img/obra/media/14946.jpg",
+					"rating": "9.5",
+					"votes": 20,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1605,
+						"publisher": "Francisco de Robles",
+						"pages": 863,
+						"language": "Spanish",
+						"since": "04/23/2016",
+						"size": "5.32 MB",
+						"license": "Dominio público",
+						"content": "Don Quijote de la Mancha es una novela que narra las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza. Es considerada una de las obras más importantes de la literatura universal."
+					},
+					"categories": [
+						"Fiction",
+						"Classic Literature"
+					],
+					"tags": [
+						"Caballeros",
+						"Aventuras",
+						"Locura",
+						"Humor"
+					]
+				},
+				{
+					"id": "5",
+					"title": "La ciudad y los perros",
+					"author": "Mario Vargas Llosa",
+					"cover": "https://www.casadelaliteratura.gob.pe/wp-content/uploads/2013/11/PortadaLaciudadyLosPerros.jpg",
+					"rating": "9.2",
+					"votes": 15,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1962,
+						"publisher": "Seix Barral",
+						"pages": 472,
+						"language": "Spanish",
+						"since": "10/06/2018",
+						"size": "4.76 MB",
+						"license": "All rights reserved",
+						"content": "La ciudad y los perros es una novela que tiene lugar en la Academia Militar Leoncio Prado, donde un grupo de estudiantes enfrenta la violencia, la corrupción y la opresión en un ambiente marcado por la rigidez militar."
+					},
+					"categories": [
+						"Fiction",
+						"Latin American Literature"
+					],
+					"tags": [
+						"Academia Militar",
+						"Violencia",
+						"Corrupción",
+						"Opresión"
+					]
+				},
+				{
+					"id": "6",
+					"title": "Don Quijote de la Mancha",
+					"author": "Miguel de Cervantes Saavedra",
+					"cover": "https://oceano.mx/img/obra/media/14946.jpg",
+					"rating": "9.5",
+					"votes": 20,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1605,
+						"publisher": "Francisco de Robles",
+						"pages": 863,
+						"language": "Spanish",
+						"since": "04/23/2016",
+						"size": "5.32 MB",
+						"license": "Dominio público",
+						"content": "Don Quijote de la Mancha es una novela que narra las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza. Es considerada una de las obras más importantes de la literatura universal."
+					},
+					"categories": [
+						"Fiction",
+						"Classic Literature"
+					],
+					"tags": [
+						"Caballeros",
+						"Aventuras",
+						"Locura",
+						"Humor"
+					]
+				},
+				{
+					"id": "7",
+					"title": "La ciudad y los perros",
+					"author": "Mario Vargas Llosa",
+					"cover": "https://www.casadelaliteratura.gob.pe/wp-content/uploads/2013/11/PortadaLaciudadyLosPerros.jpg",
+					"rating": "9.2",
+					"votes": 15,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1962,
+						"publisher": "Seix Barral",
+						"pages": 472,
+						"language": "Spanish",
+						"since": "10/06/2018",
+						"size": "4.76 MB",
+						"license": "All rights reserved",
+						"content": "La ciudad y los perros es una novela que tiene lugar en la Academia Militar Leoncio Prado, donde un grupo de estudiantes enfrenta la violencia, la corrupción y la opresión en un ambiente marcado por la rigidez militar."
+					},
+					"categories": [
+						"Fiction",
+						"Latin American Literature"
+					],
+					"tags": [
+						"Academia Militar",
+						"Violencia",
+						"Corrupción",
+						"Opresión"
+					]
+				},
+				{
+					"id": "8",
+					"title": "Don Quijote de la Mancha",
+					"author": "Miguel de Cervantes Saavedra",
+					"cover": "https://oceano.mx/img/obra/media/14946.jpg",
+					"rating": "9.5",
+					"votes": 20,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1605,
+						"publisher": "Francisco de Robles",
+						"pages": 863,
+						"language": "Spanish",
+						"since": "04/23/2016",
+						"size": "5.32 MB",
+						"license": "Dominio público",
+						"content": "Don Quijote de la Mancha es una novela que narra las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza. Es considerada una de las obras más importantes de la literatura universal."
+					},
+					"categories": [
+						"Fiction",
+						"Classic Literature"
+					],
+					"tags": [
+						"Caballeros",
+						"Aventuras",
+						"Locura",
+						"Humor"
+					]
+				},
+				{
+					"id": "9",
+					"title": "La ciudad y los perros",
+					"author": "Mario Vargas Llosa",
+					"cover": "https://www.casadelaliteratura.gob.pe/wp-content/uploads/2013/11/PortadaLaciudadyLosPerros.jpg",
+					"rating": "9.2",
+					"votes": 15,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1962,
+						"publisher": "Seix Barral",
+						"pages": 472,
+						"language": "Spanish",
+						"since": "10/06/2018",
+						"size": "4.76 MB",
+						"license": "All rights reserved",
+						"content": "La ciudad y los perros es una novela que tiene lugar en la Academia Militar Leoncio Prado, donde un grupo de estudiantes enfrenta la violencia, la corrupción y la opresión en un ambiente marcado por la rigidez militar."
+					},
+					"categories": [
+						"Fiction",
+						"Latin American Literature"
+					],
+					"tags": [
+						"Academia Militar",
+						"Violencia",
+						"Corrupción",
+						"Opresión"
+					]
+				},
+				{
+					"id": "10",
+					"title": "Don Quijote de la Mancha",
+					"author": "Miguel de Cervantes Saavedra",
+					"cover": "https://oceano.mx/img/obra/media/14946.jpg",
+					"rating": "9.5",
+					"votes": 20,
+					"details": {
+						"global": true,
+						"category": "Novel",
+						"year": 1605,
+						"publisher": "Francisco de Robles",
+						"pages": 863,
+						"language": "Spanish",
+						"since": "04/23/2016",
+						"size": "5.32 MB",
+						"license": "Dominio público",
+						"content": "Don Quijote de la Mancha es una novela que narra las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza. Es considerada una de las obras más importantes de la literatura universal."
+					},
+					"categories": [
+						"Fiction",
+						"Classic Literature"
+					],
+					"tags": [
+						"Caballeros",
+						"Aventuras",
+						"Locura",
+						"Humor"
+					]
+				}
+			]
+		}
+	]
+}
